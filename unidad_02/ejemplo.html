@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <label for="campo1"> USUARIO  </label><input type="text" name="" id="campo1" placeholder="Ingrese su usuario">
+        <label for="campo2"> CONTRASEÑA </label><input type="password" name="" id="campo2">
+        <label for="campo3"> REPETIR CONTRASEÑA </label><input type="password" name="" id="campo3">
+        <button> ENVIAR </button>
+
+
+        <article>
+            <form action="#" method="post">
+                <label for="provincias">Provincias</label>
+                <select id="provincias" name="provincias">
+                    <option value="1">Buenos Aires</option>
+                    <option value="2">Córdoba</option>
+                    <option value="3">Entre Ríos</option>
+                </select>
+                <input type="submit" value="Enviar">
+            </form>
+        </article>
+
+        <article>    
+            <h2>Output</h2>    
+            <form action="#" oninput="resultado.value=parseInt(valor_a.value)+parseInt(valor_b.value)" method="post">
+                <p>El elemento output nos permite ver calculos en vivo, dependiendo de los valores que se manejen.</p>
+                <input type="number"  id="valor_a" name="valor_a" value="50">
+                +
+                <input type="number" id="valor_b" name="valor_b" value="">
+                =
+                <output name="resultado" for="valor_a valor_b"></output>
+            </form>
+        </article>
+
+        <article>    
+            <input id="hombre" type="radio" name="tipo_sexo" value="1"> Hombre
+            <input id="mujer" type="radio" name="tipo_sexo" value="2" checked> Mujer
+            <input id="otro" type="radio" name="tipo_sexo" value="3"> Otro
+        </article>
+
+        <article>    
+            <input id="php" type="checkbox" name="php" value="php"><label for="php"> PHP</label>
+            <input id="javascript" type="checkbox" name="javascript" value="javascript" checked> <label for="javascript">JAVASCRIPT</label>
+            <input id="css" type="checkbox" name="css" value="css"><label for="css">CSS</label>
+        </article>
+    </main>
+</body>
+</html>
