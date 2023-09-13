@@ -1,0 +1,18 @@
+h1 {
+    background-color: green;
+    display: inline-block;
+    width: 300px;
+}
+
+p {
+    background-color: orange;
+    display: block;
+}
+
+/****
+block: Ocupa toda la linea de punta a punta y soporta width y heigth
+inline: Ocupa solo el ancho y alto de su contenido y no se lo puede modificar.
+inline-block: Ocupa solo el ancho y alto de su contenido y se lo puede modificar.
+none: Oculta el elemento.
+flex: 
+***/
