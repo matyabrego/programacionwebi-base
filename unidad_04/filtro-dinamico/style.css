@@ -1,0 +1,27 @@
+body{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+form{
+    height: 20%;
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section{
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    padding: 5%;
+    background-color: yellow;
+    height: 80%;
+}
