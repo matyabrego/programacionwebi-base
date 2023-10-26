@@ -14,10 +14,11 @@ const nodoPalabraABuscar = document.querySelector("#palabra-a-buscar");
 const handleListItemClick = (list) => {
   list.forEach((listItem) => {
     listItem.addEventListener("click", (event) => {
-			const target = event.target;
-
-			console.log(target.innerHTML);
+      const target = event.target;
+      console.log(target.innerHTML);
       console.log(target);
+
+      target.classList.toggle("favorites");
     });
   });
 };
@@ -31,7 +32,9 @@ nodoPalabraABuscar.addEventListener("keyup", (e) => {
 
   nodoSection.innerHTML = "";
   for (let pais of paisesConLaPalabra) {
-    nodoSection.innerHTML += `<article class='country-item'> ${pais.nombre} </article>`;
+    nodoSection.innerHTML += `<article class='country-item'>
+			<a href="./details.html?country=${pais.nombre}">${pais.nombre}</a> 
+		</article>`;
   }
 
   const countryList = document.querySelectorAll(".country-item");

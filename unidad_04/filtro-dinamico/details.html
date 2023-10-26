@@ -4,38 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./details.css" />
   </head>
   <body>
     <main>
-      <!-- <form action="#" method="GET">
-        <input type="text" name="palabra-a-buscar" id="palabra-a-buscar" />
-        <button type="submit">Buscar</button>
-      </form>
-      <section id="paises"></section> -->
-      <dialog id="favDialog">
-        <form method="dialog">
-          <p>
-            <label for="favAnimal">Favorite animal:</label>
-            <select id="favAnimal" name="favAnimal">
-              <option></option>
-              <option>Brine shrimp</option>
-              <option>Red panda</option>
-              <option>Spider monkey</option>
-            </select>
-          </p>
-          <div>
-            <button id="cancel" type="reset">Cancel</button>
-            <button type="submit">Confirm</button>
-          </div>
-        </form>
-      </dialog>
+      <section class="info">
+        <h2>Details page</h2>
+        <button id="open-dialog" class="btn-open">Open</button>
 
-      <div>
-        <button id="updateDetails">Update details</button>
-      </div>
+        <dialog class="dialog" id="dialog-confirmation">
+          <p>Hola Mundo</p>
+          <div class="modal-actions">
+            <button class="btn">Ok</button>
+            <button class="btn-close">Cancel</button>
+          </div>
+        </dialog>
+      </section>
     </main>
-    <script src="./script.js"></script>
+    <!-- <script src="./script.js"></script> -->
     <!--<script src="./repaso.js"></script>-->
+    <script src="./dialog.js"></script>
   </body>
 </html>
