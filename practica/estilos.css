@@ -1,0 +1,12 @@
+.container{
+    background-color: brown;
+    border: 2px solid black;
+}
+
+.caja{
+    display: grid;
+    grid-template-columns: 200px 400px 200px;
+    border: 3px solid #0000;
+    margin: 10px;
+}
+
