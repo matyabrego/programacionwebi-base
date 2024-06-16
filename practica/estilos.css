@@ -1,12 +1,96 @@
-.container{
-    background-color: brown;
-    border: 2px solid black;
+.tabla {
+  display: flex;
+  flex-direction: column;
 }
 
-.caja{
-    display: grid;
-    grid-template-columns: 200px 400px 200px;
-    border: 3px solid #0000;
-    margin: 10px;
+.fila {
+  display: flex;
 }
 
+.cuadrado {
+  flex: 1;
+  min-width: 100px;
+  min-height: 100px;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+.grande {
+  flex-grow: 2;
+}
+
+.normal {
+  flex-grow: 1;
+}
+/*.container {
+  background: #444;
+ display: grid;
+ grid-template-columns: repeat(4, 1fr);
+ grid-template-rows: repeat(2, 1fr);
+ border: 1px solid #000;
+ padding: 50px;
+
+}*/
+
+/*.box {
+  border: 1px solid black;
+  font-size: 30px;
+  text-align: center;
+  
+}*/
+
+/*.box{
+  padding: 20px;
+  border: 1px solid #000;
+  background-color: chocolate;
+}
+
+.box1{
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.box2{
+  grid-column: 2 / 4;
+  grid-row: 1;
+}
+
+.box3{
+  grid-column:4;
+  grid-row: 1;
+}
+
+.box4{
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.box5{
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.box6{
+  grid-column: 3 / 5;
+  grid-row: 2;
+}*/
+
+
+
+/* Media query para pantallas de 768px o menos */
+@media screen and (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  body {
+    background-color: lightblue;
+  }
+}
+
+/* Media query para pantallas de 480px o menos */
+@media (max-width: 480px) {
+  body {
+    background-color: lightcoral;
+  }
+}
